@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Train Track Chat",
+  "description": "A chat application for passengers traveling together in the same train coach. Verify with a PNR number and chat anonymously with fellow travelers during your journey.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Train Track Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for a better look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9; /* cool-gray-100 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #94a3b8; /* cool-gray-400 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b; /* cool-gray-500 */
+      }
+      
+      /* Typing indicator animation */
+      .typing-indicator span {
+        height: 8px;
+        width: 8px;
+        float: left;
+        margin: 0 2px;
+        background-color: #9E9E9E;
+        display: block;
+        border-radius: 50%;
+        opacity: 0.4;
+        animation: typing-fade 1s infinite;
+      }
+      .typing-indicator span:nth-of-type(1) {
+        animation-delay: 0s;
+      }
+      .typing-indicator span:nth-of-type(2) {
+        animation-delay: 0.2s;
+      }
+      .typing-indicator span:nth-of-type(3) {
+        animation-delay: 0.4s;
+      }
+      @keyframes typing-fade {
+        0% {
+          opacity: 0.4;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.4;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
