@@ -18,3 +18,13 @@ jobs:
         run: |
           echo "Train Chat CI is running"
           echo "Commit: $GITHUB_SHA"
+
+
+
+
+#temporary 
+
+      - name: Intentional Deep HEAL failure
+        run: |
+          echo "This workflow is intentionally failing"
+          exit 1
