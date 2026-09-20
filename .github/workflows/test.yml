@@ -1,0 +1,20 @@
+name: Train Chat CI
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check repository
+        run: |
+          echo "Train Chat CI is running"
+          echo "Commit: $GITHUB_SHA"
