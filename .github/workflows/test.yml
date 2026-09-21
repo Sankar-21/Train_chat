@@ -22,9 +22,3 @@ jobs:
 
 
 
-#temporary 
-
-      - name: Intentional Deep HEAL failure
-        run: |
-          echo "This workflow is intentionally failing"
-          exit 1
